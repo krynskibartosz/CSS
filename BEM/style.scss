@@ -1,0 +1,71 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: rgb(238,238,238);
+}
+
+.card{
+    padding: 0 5em;
+
+    &_Img{
+        display: block;
+        height: 100px;
+        width: 100%;
+        background: #e0466b;
+    }
+
+    &_Content{
+        padding: 1.5em;
+        background: #fff;
+    }
+
+    &_List{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    &_Item{
+        padding: 0.3m .5em;
+        margin-right: .5em;
+        background: rgb(230, 230, 230);
+        border-radius: .3em;
+        font-size: .85em;
+
+        &-Active{
+            background: #d4d4d4;
+            font-weight: bold;
+        }
+    }
+    
+    &_Link{
+        background: #2c8973;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        display: inline-block;
+        margin-top: .5em;
+
+        &:hover{
+            background: #267764;
+        }
+    }
+}
+.card_Dark{
+    padding:   0 5em;
+    
+    &_Item{
+        &-Active{
+            background: #000;
+        }
+    }
+    
+}
+
